@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #ffffff);
+    color: #333;
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: #4c63b6;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.draw-area {
+    width: 100%;
+    max-width: 1280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+}
+
+canvas.canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top: 1px solid #ccc;
+    background-color: #ffffff;
+    cursor: crosshair;
+}
+
+.Menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    padding: 15px 20px;
+    background-color: #eef1fb;
+    border-bottom: 1px solid #ccc;
+}
+
+.Menu label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.Menu select,
+.Menu input[type="color"],
+.Menu input[type="range"],
+.Menu button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.Menu input[type="color"] {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: 0 0 0 2px #ccc;
+    border-radius: 50%;
+}
+
+.Menu input[type="range"] {
+    width: 100px;
+}
+
+.Menu button {
+    background-color: #4c63b6;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.Menu button:hover {
+    background-color: #35469c;
+}
